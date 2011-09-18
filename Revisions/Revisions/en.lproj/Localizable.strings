@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  Revisions
+
+  Created by Dušátko Pavel on 9/18/11.
+  Copyright 2011 __MyCompanyName__. All rights reserved.
+*/
+
+"Revision" = "Revision";
+"OK" = "OK";
+"No favorites" = "No favorites";
+"Favorites" = "Favorites";
+"Loading..." = "Loading...";
+"No data" = "No data";
+"No notifications" = "No notifications";
+"Notifications" = "Notifications";
+"No internet service" = "No internet service";
+"You need to be connected to the Internet." = "You need to be connected to the Internet";
+"System error" = "System error";
+"The total amount of 64 local notifications has been reached. No more notifications can be scheduled at this moment." = "The total amount of 64 local notifications has been reached. No more notifications can be scheduled at this moment.";
+"Date error" = "Date error";
+"Please select a future date" = "Please select a future date";
+"Share" = "Share";
+"Cancel" = "Cancel";
+"Email" = "Email";
+"Date" = "Date";
+"Description" = "Description";
+"No revisions" = "No revisions";
+"Revisions" = "Revisions";
+"Delete" = "Delete";
+"Fire" = "Fire";
+"Fire at" = "Fire at";

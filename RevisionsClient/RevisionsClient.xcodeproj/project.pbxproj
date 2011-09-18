@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD50667E142559AF000C82EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD50667D142559AF000C82EB /* Foundation.framework */; };
+		CD6929B514255C7C00745D6F /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6929B314255C7C00745D6F /* NSData+Base64.h */; };
+		CD6929B614255C7C00745D6F /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6929B414255C7C00745D6F /* NSData+Base64.m */; };
+		CD6929B914255D1200745D6F /* REConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6929B714255D1200745D6F /* REConstants.h */; };
+		CD6929BA14255D1200745D6F /* REConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6929B814255D1200745D6F /* REConstants.m */; };
+		CD6929BD14255D7900745D6F /* NetworkActivityController.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6929BB14255D7900745D6F /* NetworkActivityController.h */; };
+		CD6929BE14255D7900745D6F /* NetworkActivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6929BC14255D7900745D6F /* NetworkActivityController.m */; };
+		CD6929C114255D9900745D6F /* LibXmlParser.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6929BF14255D9900745D6F /* LibXmlParser.h */; };
+		CD6929C214255D9900745D6F /* LibXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6929C014255D9900745D6F /* LibXmlParser.m */; };
+		CD6929C914255F7800745D6F /* RERequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6929C714255F7800745D6F /* RERequest.h */; };
+		CD6929CA14255F7800745D6F /* RERequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6929C814255F7800745D6F /* RERequest.m */; };
+		CD6929CE1425610B00745D6F /* REResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6929CC1425610B00745D6F /* REResponse.h */; };
+		CD6929CF1425610B00745D6F /* REResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6929CD1425610B00745D6F /* REResponse.m */; };
+		CD6929DD142564D800745D6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6929DC142564D800745D6F /* UIKit.framework */; };
+		CD6929DF142564E100745D6F /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6929DE142564E100745D6F /* libxml2.2.dylib */; };
+		CD692A6514257D0000745D6F /* REItem.h in Headers */ = {isa = PBXBuildFile; fileRef = CD692A6314257D0000745D6F /* REItem.h */; };
+		CD692A6614257D0000745D6F /* REItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CD692A6414257D0000745D6F /* REItem.m */; };
+		CD692A6914257D1F00745D6F /* REItemsRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CD692A6714257D1D00745D6F /* REItemsRequest.h */; };
+		CD692A6A14257D1F00745D6F /* REItemsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CD692A6814257D1E00745D6F /* REItemsRequest.m */; };
+		CD692A6D14257D5000745D6F /* REItemsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = CD692A6B14257D4F00745D6F /* REItemsResponse.h */; };
+		CD692A6E14257D5000745D6F /* REItemsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CD692A6C14257D4F00745D6F /* REItemsResponse.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD50667A142559AF000C82EB /* libRevisionsClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRevisionsClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD50667D142559AF000C82EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD506681142559AF000C82EB /* RevisionsClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RevisionsClient-Prefix.pch"; sourceTree = "<group>"; };
+		CD6929B314255C7C00745D6F /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		CD6929B414255C7C00745D6F /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		CD6929B714255D1200745D6F /* REConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REConstants.h; sourceTree = "<group>"; };
+		CD6929B814255D1200745D6F /* REConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REConstants.m; sourceTree = "<group>"; };
+		CD6929BB14255D7900745D6F /* NetworkActivityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkActivityController.h; sourceTree = "<group>"; };
+		CD6929BC14255D7900745D6F /* NetworkActivityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkActivityController.m; sourceTree = "<group>"; };
+		CD6929BF14255D9900745D6F /* LibXmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibXmlParser.h; sourceTree = "<group>"; };
+		CD6929C014255D9900745D6F /* LibXmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibXmlParser.m; sourceTree = "<group>"; };
+		CD6929C714255F7800745D6F /* RERequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RERequest.h; sourceTree = "<group>"; };
+		CD6929C814255F7800745D6F /* RERequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RERequest.m; sourceTree = "<group>"; };
+		CD6929CC1425610B00745D6F /* REResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REResponse.h; sourceTree = "<group>"; };
+		CD6929CD1425610B00745D6F /* REResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REResponse.m; sourceTree = "<group>"; };
+		CD6929DC142564D800745D6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CD6929DE142564E100745D6F /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		CD692A6314257D0000745D6F /* REItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REItem.h; sourceTree = "<group>"; };
+		CD692A6414257D0000745D6F /* REItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REItem.m; sourceTree = "<group>"; };
+		CD692A6714257D1D00745D6F /* REItemsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REItemsRequest.h; sourceTree = "<group>"; };
+		CD692A6814257D1E00745D6F /* REItemsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REItemsRequest.m; sourceTree = "<group>"; };
+		CD692A6B14257D4F00745D6F /* REItemsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REItemsResponse.h; sourceTree = "<group>"; };
+		CD692A6C14257D4F00745D6F /* REItemsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REItemsResponse.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD506677142559AF000C82EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6929DF142564E100745D6F /* libxml2.2.dylib in Frameworks */,
+				CD6929DD142564D800745D6F /* UIKit.framework in Frameworks */,
+				CD50667E142559AF000C82EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD50666F142559AF000C82EB = {
+			isa = PBXGroup;
+			children = (
+				CD50667F142559AF000C82EB /* RevisionsClient */,
+				CD50667C142559AF000C82EB /* Frameworks */,
+				CD50667B142559AF000C82EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD50667B142559AF000C82EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD50667A142559AF000C82EB /* libRevisionsClient.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD50667C142559AF000C82EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD6929DE142564E100745D6F /* libxml2.2.dylib */,
+				CD6929DC142564D800745D6F /* UIKit.framework */,
+				CD50667D142559AF000C82EB /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD50667F142559AF000C82EB /* RevisionsClient */ = {
+			isa = PBXGroup;
+			children = (
+				CD6929A414255C0800745D6F /* Classes */,
+				CD506680142559AF000C82EB /* Supporting Files */,
+			);
+			path = RevisionsClient;
+			sourceTree = "<group>";
+		};
+		CD506680142559AF000C82EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD506681142559AF000C82EB /* RevisionsClient-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD6929A414255C0800745D6F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CD6929A914255C1300745D6F /* Entity */,
+				CD6929A814255C1100745D6F /* Request */,
+				CD6929A714255C1000745D6F /* Response */,
+				CD6929A614255C0E00745D6F /* Util */,
+				CD6929B714255D1200745D6F /* REConstants.h */,
+				CD6929B814255D1200745D6F /* REConstants.m */,
+				CD6929BF14255D9900745D6F /* LibXmlParser.h */,
+				CD6929C014255D9900745D6F /* LibXmlParser.m */,
+				CD6929BB14255D7900745D6F /* NetworkActivityController.h */,
+				CD6929BC14255D7900745D6F /* NetworkActivityController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CD6929A614255C0E00745D6F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CD6929B314255C7C00745D6F /* NSData+Base64.h */,
+				CD6929B414255C7C00745D6F /* NSData+Base64.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		CD6929A714255C1000745D6F /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				CD6929CC1425610B00745D6F /* REResponse.h */,
+				CD6929CD1425610B00745D6F /* REResponse.m */,
+				CD692A6B14257D4F00745D6F /* REItemsResponse.h */,
+				CD692A6C14257D4F00745D6F /* REItemsResponse.m */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		CD6929A814255C1100745D6F /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				CD6929C714255F7800745D6F /* RERequest.h */,
+				CD6929C814255F7800745D6F /* RERequest.m */,
+				CD692A6714257D1D00745D6F /* REItemsRequest.h */,
+				CD692A6814257D1E00745D6F /* REItemsRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		CD6929A914255C1300745D6F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CD692A6314257D0000745D6F /* REItem.h */,
+				CD692A6414257D0000745D6F /* REItem.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CD506678142559AF000C82EB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6929B514255C7C00745D6F /* NSData+Base64.h in Headers */,
+				CD6929B914255D1200745D6F /* REConstants.h in Headers */,
+				CD6929BD14255D7900745D6F /* NetworkActivityController.h in Headers */,
+				CD6929C114255D9900745D6F /* LibXmlParser.h in Headers */,
+				CD6929C914255F7800745D6F /* RERequest.h in Headers */,
+				CD6929CE1425610B00745D6F /* REResponse.h in Headers */,
+				CD692A6514257D0000745D6F /* REItem.h in Headers */,
+				CD692A6914257D1F00745D6F /* REItemsRequest.h in Headers */,
+				CD692A6D14257D5000745D6F /* REItemsResponse.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CD506679142559AF000C82EB /* RevisionsClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD506687142559AF000C82EB /* Build configuration list for PBXNativeTarget "RevisionsClient" */;
+			buildPhases = (
+				CD506676142559AF000C82EB /* Sources */,
+				CD506677142559AF000C82EB /* Frameworks */,
+				CD506678142559AF000C82EB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RevisionsClient;
+			productName = RevisionsClient;
+			productReference = CD50667A142559AF000C82EB /* libRevisionsClient.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD506671142559AF000C82EB /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = CD506674142559AF000C82EB /* Build configuration list for PBXProject "RevisionsClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD50666F142559AF000C82EB;
+			productRefGroup = CD50667B142559AF000C82EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD506679142559AF000C82EB /* RevisionsClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD506676142559AF000C82EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6929B614255C7C00745D6F /* NSData+Base64.m in Sources */,
+				CD6929BA14255D1200745D6F /* REConstants.m in Sources */,
+				CD6929BE14255D7900745D6F /* NetworkActivityController.m in Sources */,
+				CD6929C214255D9900745D6F /* LibXmlParser.m in Sources */,
+				CD6929CA14255F7800745D6F /* RERequest.m in Sources */,
+				CD6929CF1425610B00745D6F /* REResponse.m in Sources */,
+				CD692A6614257D0000745D6F /* REItem.m in Sources */,
+				CD692A6A14257D1F00745D6F /* REItemsRequest.m in Sources */,
+				CD692A6E14257D5000745D6F /* REItemsResponse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CD506685142559AF000C82EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = $SDKROOT/usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD506686142559AF000C82EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = $SDKROOT/usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD506688142559AF000C82EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RevisionsClient.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RevisionsClient/RevisionsClient-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CD506689142559AF000C82EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RevisionsClient.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RevisionsClient/RevisionsClient-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD506674142559AF000C82EB /* Build configuration list for PBXProject "RevisionsClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD506685142559AF000C82EB /* Debug */,
+				CD506686142559AF000C82EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD506687142559AF000C82EB /* Build configuration list for PBXNativeTarget "RevisionsClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD506688142559AF000C82EB /* Debug */,
+				CD506689142559AF000C82EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD506671142559AF000C82EB /* Project object */;
+}

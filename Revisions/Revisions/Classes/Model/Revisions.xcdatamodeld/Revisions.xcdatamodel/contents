@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="562" systemVersion="11B26" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ApplicationDefaults" representedClassName="ApplicationDefaults">
+        <attribute name="lastTabSelected" attributeType="Integer 16" defaultValueString="0"/>
+    </entity>
+    <entity name="Favorite" representedClassName="Favorite">
+        <attribute name="title" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="ApplicationDefaults" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="Favorite" positionX="160" positionY="192" width="128" height="60"/>
+    </elements>
+</model>
