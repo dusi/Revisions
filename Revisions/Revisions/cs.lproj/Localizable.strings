@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  Revisions
+
+  Created by Dušátko Pavel on 9/18/11.
+  Copyright 2011 __MyCompanyName__. All rights reserved.
+*/
+
+"Revision" = "Změna ve výuce";
+"OK" = "OK";
+"No favorites" = "Žádné oblíbené";
+"Favorites" = "Oblíbené";
+"Loading..." = "Načítám...";
+"No data" = "Žádná data";
+"No notifications" = "Žádné notifikace";
+"Notifications" = "Notifikace";
+"No internet service" = "Chyba připojení";
+"You need to be connected to the Internet." = "Je vyžadováno internetové připojení";
+"System error" = "Systémová chyba";
+"The total amount of 64 local notifications has been reached. No more notifications can be scheduled at this moment." = "Maximální počet 64 notifikací byl vyčerpán. V tuto chvíli není možné vytvořit další.";
+"Date error" = "Chyba datumu";
+"Please select a future date" = "Prosím zvolte budoucí datum";
+"Share" = "Sdílet";
+"Cancel" = "Storno";
+"Email" = "Email";
+"Date" = "Datum";
+"Description" = "Popis";
+"No revisions" = "Žádné změny ve výuce";
+"Revisions" = "Změny ve výuce";
+"Delete" = "Smazat";
+"Fire" = "Upomenout";
+"Fire at" = "Upomenout";
