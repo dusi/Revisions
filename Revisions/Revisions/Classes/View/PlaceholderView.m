@@ -86,7 +86,6 @@
     return [result autorelease];
 }
 
-
 - (void)configureView
 {
     [self removeAllSubviews];
