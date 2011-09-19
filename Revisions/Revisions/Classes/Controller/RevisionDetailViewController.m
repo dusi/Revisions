@@ -206,7 +206,7 @@
 	
 	if (!results)
     {
-		NSLog(@"Unresolved error while fetching : %@ %@", [error localizedDescription], [error userInfo]);
+		NSLog(@"Unresolved error while fetching %@ %@", [error localizedDescription], [error userInfo]);
 		
 		return nil;
 	}
@@ -240,7 +240,7 @@
     NSError *error;
 	if (![self.managedObjectContext save:&error])
     {
-		NSLog(@"Unresolved error while saving: %@ %@", [error localizedDescription], [error userInfo]);
+		NSLog(@"Unresolved error while saving %@ %@", [error localizedDescription], [error userInfo]);
 	}
 }
 

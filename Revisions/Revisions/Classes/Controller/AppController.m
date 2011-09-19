@@ -232,7 +232,7 @@
 		[request release];
 		
 		if (!results)
-			NSLog(@"Unresolved error while fetching: %@ %@", error, [error userInfo]);
+			NSLog(@"Unresolved error while fetching %@ %@", error, [error userInfo]);
 		
 		if ([results count])
 			__applicationDefaults = [[results objectAtIndex:0] retain];
@@ -306,8 +306,8 @@
 {
     NSString *title = [localNotif.userInfo valueForKey:@"revisionTitle"];
     NSString *date = [self.dateFormatter stringFromDate:[localNotif.userInfo valueForKey:@"revisionDate"]];
-    NSString *info = [localNotif.userInfo valueForKey: @"revisionInfo"];
-    NSString *message = [NSString stringWithFormat: @"%@ - %@", date, info];
+    NSString *info = [localNotif.userInfo valueForKey:@"revisionInfo"];
+    NSString *message = [NSString stringWithFormat:@"%@ - %@", date, info];
     
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
                                                         message:message

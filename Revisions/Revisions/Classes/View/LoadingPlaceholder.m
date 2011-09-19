@@ -16,15 +16,15 @@
     if (self)
     {
         textLabel = [[UILabel alloc] init];
-        textLabel.font = [UIFont boldSystemFontOfSize: 16];
+        textLabel.font = [UIFont boldSystemFontOfSize:16];
         textLabel.textColor = [UIColor grayColor];
         textLabel.textAlignment = UITextAlignmentCenter;
         textLabel.text = NSLocalizedString(@"Loading...", nil);
-        [self addSubview: textLabel];
+        [self addSubview:textLabel];
         
-        activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleGray];
+        activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
         [activityIndicator startAnimating];
-        [self addSubview: activityIndicator];
+        [self addSubview:activityIndicator];
     }
     return self;
 }

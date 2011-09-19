@@ -209,7 +209,7 @@
 	
 	if (!results)
     {
-		NSLog(@"Unresolved error while fetching : %@ %@", [error localizedDescription], [error userInfo]);
+		NSLog(@"Unresolved error while fetching %@ %@", [error localizedDescription], [error userInfo]);
 		
 		return nil;
 	}

@@ -16,11 +16,11 @@
     if (self)
     {
         textLabel = [[UILabel alloc] init];
-        textLabel.font = [UIFont boldSystemFontOfSize: 16];
+        textLabel.font = [UIFont boldSystemFontOfSize:16];
         textLabel.textColor = [UIColor grayColor];
         textLabel.textAlignment = UITextAlignmentCenter;
         textLabel.text = NSLocalizedString(@"No data", nil);
-        [self addSubview: textLabel];
+        [self addSubview:textLabel];
     }
     return self;
 }

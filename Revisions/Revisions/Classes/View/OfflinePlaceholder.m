@@ -16,18 +16,18 @@
     if (self)
     {
         textLabel = [[UILabel alloc] init];
-        textLabel.font = [UIFont boldSystemFontOfSize: 16];
+        textLabel.font = [UIFont boldSystemFontOfSize:16];
         textLabel.textColor = [UIColor grayColor];
         textLabel.textAlignment = UITextAlignmentCenter;
         textLabel.text = NSLocalizedString(@"No internet service", nil);
-        [self addSubview: textLabel];
+        [self addSubview:textLabel];
         
         detailTextLabel = [[UILabel alloc] init];
-        detailTextLabel.font = [UIFont boldSystemFontOfSize: 12];
+        detailTextLabel.font = [UIFont boldSystemFontOfSize:12];
         detailTextLabel.textColor = [UIColor grayColor];
         detailTextLabel.textAlignment = UITextAlignmentCenter;
         detailTextLabel.text = NSLocalizedString(@"You need to be connected to the Internet.", nil);
-        [self addSubview: detailTextLabel];
+        [self addSubview:detailTextLabel];
     }
     return self;
 }

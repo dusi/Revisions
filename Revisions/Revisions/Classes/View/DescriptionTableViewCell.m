@@ -34,7 +34,7 @@
 	CGFloat width = self.frame.size.width;
 	
 	CGSize constraint = CGSizeMake(width, NSIntegerMax);
-	CGSize size = [description sizeWithFont:[UIFont systemFontOfSize: 16.0] 
+	CGSize size = [description sizeWithFont:[UIFont systemFontOfSize:16.0] 
                           constrainedToSize:constraint];
     
 	CGFloat height = MAX(20.0, size.height);
