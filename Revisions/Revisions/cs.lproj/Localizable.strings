@@ -23,10 +23,10 @@
 "Share" = "Sdílet";
 "Cancel" = "Storno";
 "Email" = "Email";
-"Date" = "Datum";
+"Date" = "Datum změny";
 "Description" = "Popis";
 "No revisions" = "Žádné změny ve výuce";
 "Revisions" = "Změny ve výuce";
 "Delete" = "Smazat";
-"Fire" = "Upomenout";
+"Notification date" = "Čas upomínky";
 "Fire at" = "Upomenout";

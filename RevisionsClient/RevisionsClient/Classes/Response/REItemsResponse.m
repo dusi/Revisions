@@ -40,8 +40,13 @@
 {
     if (!dateFormatter)
     {
+        NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"us"];
+        
         dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.locale = locale;
         dateFormatter.dateFormat = @"EEE, dd MMM yyyy HH:mm:ss Z";
+        
+        [locale release];
     }
     return dateFormatter;
 }

@@ -289,7 +289,7 @@
 	if (!dateFormatter)
     {
 		dateFormatter = [[NSDateFormatter alloc] init];
-		dateFormatter.dateFormat = @"MMM d";
+		dateFormatter.dateFormat = @"dd/MM/yyyy";
 	}
 	return dateFormatter;
 }
@@ -305,7 +305,7 @@
 - (void)showAlertWithLocalNotification:(UILocalNotification *)localNotif
 {
     NSString *title = [localNotif.userInfo valueForKey:@"revisionTitle"];
-    NSString *date = [self.dateFormatter stringFromDate:[localNotif.userInfo valueForKey:@"revisionDate"]];
+    NSString *date = [[self.dateFormatter stringFromDate:[localNotif.userInfo valueForKey:@"revisionDate"]] capitalizedString];
     NSString *info = [localNotif.userInfo valueForKey:@"revisionInfo"];
     NSString *message = [NSString stringWithFormat:@"%@ - %@", date, info];
     

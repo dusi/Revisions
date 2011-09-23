@@ -533,7 +533,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pavel Dusatko (8GT28WZ9JR)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -556,6 +556,7 @@
 					"-all_load",
 					"-ObjC",
 				);
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "86BD2DB3-A40B-481F-A72F-3F783F414372";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -565,7 +566,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pavel Dusatko (8GT28WZ9JR)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
@@ -582,6 +583,7 @@
 					"-all_load",
 					"-ObjC",
 				);
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "86BD2DB3-A40B-481F-A72F-3F783F414372";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

@@ -134,7 +134,7 @@
     UILocalNotification *notif = [notificationArray objectAtIndex:indexPath.row];
     
     cell.textLabel.text = notif.alertBody;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"Fire at", nil), [self.dateFormatter stringFromDate:notif.fireDate]];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"Fire at", nil), [[self.dateFormatter stringFromDate:notif.fireDate] capitalizedString]];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 }
 
@@ -215,7 +215,7 @@
 - (NSDateFormatter *)dateFormatter
 {
 	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.dateFormat = @"HH:mm - MMM d, yyyy";
+    dateFormatter.dateFormat = @"HH:mm - dd/MM/yyyy";
 	
 	return [dateFormatter autorelease];;
 }

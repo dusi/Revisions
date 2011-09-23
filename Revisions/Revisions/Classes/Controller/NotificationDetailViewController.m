@@ -128,11 +128,11 @@
         case 0:
         {
             NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-            dateFormatter.dateFormat = @"HH:mm - MMM d, yyyy";
+            dateFormatter.dateFormat = @"HH:mm - dd/MM/yyyy";
             
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            cell.textLabel.text = NSLocalizedString(@"Fire", nil);
-            cell.detailTextLabel.text = [dateFormatter stringFromDate:self.localNotification.fireDate];
+            cell.textLabel.text = NSLocalizedString(@"Notification date", nil);
+            cell.detailTextLabel.text = [[dateFormatter stringFromDate:self.localNotification.fireDate] capitalizedString];
             
             [dateFormatter release];
             
@@ -141,13 +141,13 @@
         case 1:
         {
             NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-            dateFormatter.dateFormat = @"MMM d";
+            dateFormatter.dateFormat = @"dd/MM/yyyy";
             
             NSDate *revisionDate = [self.localNotification.userInfo valueForKey:@"revisionDate"];
             
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             cell.textLabel.text = NSLocalizedString(@"Date", nil);
-            cell.detailTextLabel.text = [dateFormatter stringFromDate:revisionDate];
+            cell.detailTextLabel.text = [[dateFormatter stringFromDate:revisionDate] capitalizedString];
             
             [dateFormatter release];
             

@@ -145,7 +145,7 @@
     UIColor *cellColor = ([self isFavorite:revision]) ? [UIColor colorWithRed:0.929 green:0.953 blue:0.996 alpha:1.0] : [UIColor whiteColor];
     
     cell.backgroundView.backgroundColor = cellColor;
-    cell.textLabel.text = [self.dateFormatter stringFromDate:revision.date];
+    cell.textLabel.text = [[self.dateFormatter stringFromDate:revision.date] capitalizedString];
     cell.textLabel.backgroundColor = cellColor;
     cell.detailTextLabel.text = revision.title;
     cell.detailTextLabel.backgroundColor = cellColor;
@@ -189,7 +189,7 @@
 - (NSDateFormatter *)dateFormatter
 {
 	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.dateFormat = @"MMM d";
+    dateFormatter.dateFormat = @"dd/MM/yyyy";;
     
     return [dateFormatter autorelease];
 }

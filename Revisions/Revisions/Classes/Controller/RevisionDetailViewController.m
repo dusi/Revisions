@@ -143,7 +143,7 @@
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
 	cell.textLabel.text = NSLocalizedString(@"Date", nil);
-    cell.detailTextLabel.text = [self.dateFormatter stringFromDate:self.revision.date];
+    cell.detailTextLabel.text = [[self.dateFormatter stringFromDate:self.revision.date] capitalizedString];
     
 	return cell;
 }
@@ -288,16 +288,19 @@
     UILocalNotification *localNotification = [[UILocalNotification alloc] init];
     if (localNotification)
     {
-        NSArray *objects = [NSArray arrayWithObjects:revision.title, revision.date, revision.info, revision.link, nil];
-        NSArray *keys = [NSArray arrayWithObjects:@"revisionTitle", @"revisionDate", @"revisionInfo", @"revisionLink", nil];
-        
-        NSDictionary *userInfo = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
-        localNotification.fireDate = fireDate;
-        localNotification.alertBody = revision.title;
-        localNotification.userInfo = userInfo;
-        
-        [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
-        [localNotification release];
+        if (revision.title && revision.date && revision.info && revision.link)
+        {
+            NSArray *objects = [NSArray arrayWithObjects:revision.title, revision.date, revision.info, revision.link, nil];
+            NSArray *keys = [NSArray arrayWithObjects:@"revisionTitle", @"revisionDate", @"revisionInfo", @"revisionLink", nil];
+            
+            NSDictionary *userInfo = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
+            localNotification.fireDate = fireDate;
+            localNotification.alertBody = revision.title;
+            localNotification.userInfo = userInfo;
+            
+            [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+            [localNotification release];
+        }
     }
     
     [self reloadData];
@@ -360,7 +363,7 @@
 - (NSDateFormatter *)dateFormatter
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.dateFormat = @"MMM d";
+    dateFormatter.dateFormat = @"dd/MM/yyyy";
 	
 	return [dateFormatter autorelease];
 }

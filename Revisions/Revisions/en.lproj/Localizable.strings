@@ -23,10 +23,10 @@
 "Share" = "Share";
 "Cancel" = "Cancel";
 "Email" = "Email";
-"Date" = "Date";
+"Date" = "Revision date";
 "Description" = "Description";
 "No revisions" = "No revisions";
 "Revisions" = "Revisions";
 "Delete" = "Delete";
-"Fire" = "Fire";
+"Notification date" = "Notification date";
 "Fire at" = "Fire at";
