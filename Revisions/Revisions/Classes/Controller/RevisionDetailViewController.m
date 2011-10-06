@@ -159,7 +159,7 @@
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
 	cell.textLabel.text = NSLocalizedString(@"Description", nil);
-    cell.detailTextLabel.text = self.revision.info;
+    cell.detailText = self.revision.info;
     
 	return cell;
 }
