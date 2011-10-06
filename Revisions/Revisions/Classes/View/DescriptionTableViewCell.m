@@ -10,6 +10,11 @@
 
 @implementation DescriptionTableViewCell
 
+@synthesize detailText;
+@synthesize webView;
+
+#pragma mark - Object lifecycle
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -18,6 +23,11 @@
         self.detailTextLabel.textAlignment = UITextAlignmentLeft;
         self.detailTextLabel.numberOfLines = 0;
         self.detailTextLabel.lineBreakMode = UILineBreakModeWordWrap;
+        
+        webView = [[UIWebView alloc] initWithFrame:CGRectZero];
+        webView.userInteractionEnabled = NO;
+        webView.scalesPageToFit = NO;
+        [self.contentView addSubview:webView];
     }
     return self;
 }
@@ -25,6 +35,14 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
+}
+
+- (void)dealloc
+{
+    [detailText release];
+    [webView release];
+    
+    [super dealloc];
 }
 
 #pragma mark - Layout
@@ -46,12 +64,14 @@
 {
     [super layoutSubviews];
     
+    [webView loadHTMLString:self.detailText baseURL:nil];
+    
     self.textLabel.frame = CGRectMake(10.0,
                                       0.0,
                                       self.frame.size.width - 20.0,
                                       60.0);
     
-    self.detailTextLabel.frame = [self frameForDescription:self.detailTextLabel.text];
+    self.webView.frame = [self frameForDescription:self.detailText];
 }
 
 @end

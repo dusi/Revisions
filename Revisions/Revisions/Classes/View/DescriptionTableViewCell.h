@@ -10,4 +10,7 @@
 
 @interface DescriptionTableViewCell : UITableViewCell
 
+@property (nonatomic, retain) NSString *detailText;
+@property (nonatomic, retain) UIWebView *webView;
+
 @end
