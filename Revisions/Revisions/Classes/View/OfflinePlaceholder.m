@@ -10,6 +10,8 @@
 
 @implementation OfflinePlaceholder
 
+#pragma mark - Object lifecycle
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
